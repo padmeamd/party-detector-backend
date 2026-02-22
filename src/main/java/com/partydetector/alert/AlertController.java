@@ -21,7 +21,7 @@ public class AlertController {
         this.roomRepo = roomRepo;
     }
 
-    @PostMapping
+    @GetMapping
     public Alert create(@RequestBody @Valid CreateAlertRequest req) {
         // save alert
         Alert a = new Alert();
